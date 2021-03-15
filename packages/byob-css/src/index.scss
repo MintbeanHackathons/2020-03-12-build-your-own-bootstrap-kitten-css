@@ -7,12 +7,12 @@ html {
 }
 
 h1 {
-  color: mix($color-primary, $color-secondary, 0%);
+  color: mix($color-dark-red, $color-dark-yellow, 0%);
   font-size: 3rem;
 }
 
 h2 {
-  color: mix($color-primary, $color-secondary, 20%);
+  color: mix($color-dark-blue, $color-dark-red, 20%);
   font-size: 2.4rem;
 }
 
