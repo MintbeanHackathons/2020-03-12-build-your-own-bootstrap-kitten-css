@@ -14,7 +14,17 @@ function App() {
             </section>
             <section>
                 <h1>Cards</h1>
-                <div class="card">Hello World</div>
+                <div className="card">Hello World</div>
+            </section>
+            <section className="rows">
+                <div className="card">Card 1</div>
+                <div className="card">Card 2</div>
+                <div className="card">Card 3</div>
+            </section>
+            <section className="columns">
+                <div className="card">Card 4</div>
+                <div className="card">Card 5</div>
+                <div className="card">Card 6</div>
             </section>
         </div>
     )
