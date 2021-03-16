@@ -1,0 +1,320 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+h1 {
+  font-size: 47.77574px;
+}
+
+h2 {
+  font-size: 39.81312px;
+}
+
+h3 {
+  font-size: 33.1776px;
+}
+
+h4 {
+  font-size: 27.648px;
+}
+
+h5 {
+  font-size: 23.04px;
+}
+
+h6 {
+  font-size: 19.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
+  color: #222222;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16;
+  font-family: Montserrat;
+  font-weight: lighter;
+}
+
+body nav:first-of-type {
+  max-height: 5vh;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: #efefef;
+  width: 100vw;
+}
+
+body nav:first-of-type *:first-child::after {
+  content: "";
+}
+
+@media screen and (min-width: 768px) {
+  body nav:first-of-type {
+    padding: 16px;
+  }
+}
+
+body nav:first-of-type *:first-child:not(ul) {
+  width: 80px;
+}
+
+body nav:first-of-type *:last-child:not(ul) {
+  margin-right: 40px;
+  width: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+li {
+  margin: 0 8px;
+}
+
+body > section {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body > section {
+    padding: 0 5%;
+  }
+}
+
+body > section:first-of-type {
+  min-height: 60vh;
+  height: auto;
+  background-color: #efefef;
+  padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  body > section:first-of-type > *:first-child {
+    margin-top: 6%;
+    max-width: 50vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body > section:first-of-type {
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body > section:first-of-type > h1, body > section:first-of-type h2, body > section:first-of-type h3, body > section:first-of-type h4, body > section:first-of-type h5, body > section:first-of-type h6 {
+    max-width: 50vw;
+  }
+}
+
+body > section:first-of-type span:nth-child(2),
+body > section:first-of-type span:nth-child(3),
+body > section:first-of-type span:nth-child(4) {
+  display: block;
+  width: 80px;
+  height: 10px;
+  background-color: #4a5cff;
+  margin: 24px 0;
+}
+
+body > section:first-of-type > h2 {
+  font-size: 23.04px;
+}
+
+body > section:first-of-type > img {
+  max-width: 95%;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  body > section:first-of-type > img {
+    max-width: 30%;
+    max-height: 50%;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+  }
+}
+
+body > section:first-of-type > p {
+  max-width: 95%;
+}
+
+@media screen and (min-width: 768px) {
+  body > section:first-of-type > p {
+    max-width: 30%;
+  }
+}
+
+body > section:first-of-type > button {
+  background-color: #4a5cff;
+  border: none;
+  color: white;
+  padding: 1em;
+  border-radius: 6px;
+  font-size: 19.2px;
+  -webkit-box-shadow: 7px 7px 5px -4px rgba(0, 0, 0, 0.26);
+          box-shadow: 7px 7px 5px -4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+}
+
+nav + section:first-of-type h1 {
+  margin-top: 15vh;
+}
+
+section {
+  padding: 0 8px;
+}
+
+section:not(:first-of-type) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section:not(:first-of-type) > h1:first-child::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 10px;
+  background-color: #4a5cff;
+  margin: 24px 0;
+}
+
+@media screen and (min-width: 768px) {
+  section:not(:first-of-type) {
+    display: block;
+  }
+}
+
+section:not(:first-of-type) aside {
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 2%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+  margin: 8px;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  section:not(:first-of-type) aside {
+    width: 20%;
+  }
+}
+
+section:not(:first-of-type) aside:first-of-type {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+section:not(:first-of-type) aside:last-of-type {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+section:not(:first-of-type) aside span {
+  display: block;
+  width: 80px;
+  height: 10px;
+  background-color: #4a5cff;
+  margin: 24px 0;
+}
+
+section:not(:first-of-type) aside img {
+  max-width: 100%;
+  max-height: 60%;
+  max-width: auto;
+}
+
+section:not(:first-of-type) aside h1, section:not(:first-of-type) aside h2, section:not(:first-of-type) aside h3, section:not(:first-of-type) aside h4, section:not(:first-of-type) aside h5, section:not(:first-of-type) aside h6 {
+  margin: 0;
+}
+
+section:nth-child(2n) {
+  background-color: #fbfbfb;
+}
+/*# sourceMappingURL=index.css.map */

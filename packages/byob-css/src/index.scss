@@ -1,46 +1,268 @@
-@import "normalize.css";
 @import "./variables";
+@import "./mixins";
 @import "./calculated";
+@import "./typescale";
 
-html {
-  font-size: $font-size-baseline;
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
 }
 
 h1 {
-  color: mix($color-primary, $color-secondary, 0%);
-  font-size: 3rem;
+  font-size: $base-type * $small-typescale * $small-typescale * $small-typescale * $small-typescale * $small-typescale * $small-typescale + 0px; 
 }
 
 h2 {
-  color: mix($color-primary, $color-secondary, 20%);
-  font-size: 2.4rem;
+  font-size: $base-type * $small-typescale * $small-typescale * $small-typescale * $small-typescale * $small-typescale + 0px;
 }
 
 h3 {
-  color: mix($color-primary, $color-secondary, 40%);
-  font-size: 2rem;
+  font-size: $base-type * $small-typescale * $small-typescale * $small-typescale * $small-typescale + 0px;
 }
 h4 {
-  color: mix($color-primary, $color-secondary, 60%);
-  font-size: 1.65rem;
+  font-size: $base-type * $small-typescale * $small-typescale * $small-typescale + 0px;
 }
+
 h5 {
-  color: mix($color-primary, $color-secondary, 80%);
-  font-size: 1.5rem;
+  font-size: $base-type * $small-typescale * $small-typescale + 0px
 }
+
 h6 {
-  color: mix($color-primary, $color-secondary, 100%);
-  font-size: 1.25rem;
+  font-size: $base-type * $small-typescale + 0px
 }
 
-.card {
-  border: 2px solid #2d2d2d;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 4px;
+h1,h2,h3,h4,h5,h6{
+  font-family: $heading-font;
+  color: $font-color;
+  font-weight: bold;
+}
 
-  &:hover {
-    background-color: #eeeeee;
-    cursor: pointer;
+p {
+  font-size: $base-type;
+  font-family: Montserrat;
+  font-weight: lighter;
+}
+
+
+
+body {
+  // nav bar
+  & nav:first-of-type {
+
+    // put a pseudoelement after the first child to make elements distribute properly
+     *:first-child::after {
+      content: "";
+    }
+
+    max-height: 5vh;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    justify-content: space-between;
+    
+    // padding: 240px;
+
+    display: flex;
+    position: fixed;
+    top:0;
+    background-color: $hero-bg;
+    width: 100vw;
+
+    @include tablet {
+      padding: 16px;
+    }
+
+    // if there is a wordmark or image, make it 80x80 pixels
+    & *:first-child:not(ul) {
+      width: 80px;
+    }
+
+    & *:last-child:not(ul) {
+      margin-right: 40px;
+      width: 80px;
+    }
   }
+
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+}
+
+li {
+  margin: 0 8px;
+}
+
+// body sections
+body > section {
+  padding: 0;
+  @include tablet {
+    padding: 0 $tablet-padding;
+  }
+}
+
+// Hero section
+body > section:first-of-type {
+  
+  // position: relative;
+
+  min-height: 60vh;
+  height:auto;
+  background-color: $hero-bg;
+  padding: 8px;
+
+  & > *:first-child {
+    // margin: 0;
+
+    @include tablet {
+      margin-top: 6%;
+      max-width: 50vw;
+    }
+  }
+
+  @include tablet{
+    padding: $tablet-padding;
+  }
+
+
+  & > h1,h2,h3,h4,h5,h6{
+    @include tablet {
+      max-width: 50vw;
+    }
+  }
+
+  & span:nth-child(2), 
+  & span:nth-child(3), 
+  & span:nth-child(4) {
+    display: block;
+    width: 80px;
+    height: 10px;
+    background-color: $primary;
+    margin: 24px 0;
+  }
+
+  & > h2 {
+    font-size: $base-type * $small-typescale * $small-typescale + 0px; 
+  }
+
+  & > img {
+    max-width: 95%;
+    margin-top: 24px;
+
+    @include tablet {
+      max-width: 30%;
+      max-height: 50%;
+      position:absolute;
+      top: 20%;
+      left: 60%;
+    }
+
+  }
+
+  & > p {
+    max-width: 95%;
+    @include tablet {
+      max-width: 30%;
+    }
+  }
+
+  & > button {
+    background-color:$primary;
+    border: none;
+    color: white;
+    padding: 1em;
+    border-radius: 6px;
+    font-size: $base-type * $small-typescale +0px ;
+    box-shadow: 7px 7px 5px -4px rgba(0,0,0,0.26);
+    cursor: pointer;
+
+    &:hover {
+      
+    }
+  }
+} 
+
+ nav + section:first-of-type h1 {
+  margin-top: 15vh;
+}
+
+section {
+  padding: 0 8px;
+}
+
+// cards
+section:not(:first-of-type) {
+  display: flex;
+  flex-direction: column;
+
+  & > h1:first-child::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 10px;
+    background-color: $primary;
+    margin: 24px 0;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+section:not(:first-of-type) aside {
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.1);
+  display: inline-block;
+  padding: 2%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid $hero-bg;
+  margin: 8px;
+  vertical-align:top;
+
+  @include tablet {
+    width: 20%;
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+    margin-right: 8px
+  }
+  &:last-of-type {
+    margin-left: 8px;
+    margin-right: 0
+  }
+
+  & span {
+    display: block;
+    width: 80px;
+    height: 10px;
+    background-color: $primary;
+    margin: 24px 0;
+  }
+
+  & img {
+    max-width:100%;
+    max-height:60%;
+    max-width: auto;
+  }
+
+  & h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+}
+
+// alternating section colors
+section:nth-child(2n){
+  background-color: #fbfbfb;
+}
+
+// footer 
+body > footer:last-of-type {
+
 }

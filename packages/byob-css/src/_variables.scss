@@ -1,4 +1,18 @@
-$color-primary: pink;
-$color-secondary: green;
+// breakpoints
+@import './fonts';
 
-$font-size-baseline: 18px;
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+$heading-font: Montserrat;
+
+// colors
+$font-color: #222222;
+$primary: #4a5cff;
+$hero-bg: #efefef;
+
+// padding for different breakpoints
+$mobile-padding: 0px;
+$tablet-padding: 5%;
+$desktop-padding: 12%;
