@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "start": "cd packages/r3site && yarn start",
-    "build": "rm -rf ./docs && cd packages/r3site && yarn build"
+    "build": "rm -rf ./docs && cd packages/r3site && yarn build",
+    "bp": "yarn workspace r3elements build"
   }
 }
