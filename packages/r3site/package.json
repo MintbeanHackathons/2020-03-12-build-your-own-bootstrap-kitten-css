@@ -1,15 +1,15 @@
 {
-  "name": "byob-css-example",
+  "name": "r3site",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Monarch Wadia",
+  "author": "Reactive3 - Hussain and Rahul",
   "license": "MIT",
   "scripts": {
     "start": "parcel serve index.html --no-autoinstall",
     "build": "parcel build index.html --public-url '.' --no-autoinstall --out-dir ../../docs"
   },
   "dependencies": {
-    "byob-css": "*"
+    "r3elements": "*"
   },
   "devDependencies": {
     "parcel-bundler": "1.12.3"
