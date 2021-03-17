@@ -1,6 +1,5 @@
 import React from 'react'
-import Example from './components/Example'
-import { Card, Button } from './snippets/snippets/'
+import ButtonPage from './pages/ButtonPage'
 
 const App = () => {
 
@@ -16,10 +15,7 @@ const App = () => {
                 <h6>Header 6</h6>
             </section>
             <hr/>
-
-            <Example>{ <Card text="Primary" classes="primary" /> }</Example>
-            <Example>{ <Button text="Primary" classes="button" /> }</Example>
-            <Example>{ <Button text="Dark Green" classes="primary-button" /> }</Example>
+            <ButtonPage />
         </div>
     )
 }

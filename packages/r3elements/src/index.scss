@@ -60,21 +60,304 @@ h6 {
 
 // Button Component
 .button{
-  padding: 1rem 2rem;
-  border: 1px solid $color-dark-blue;
+  padding: 0.5rem 1rem;
+  border: 1px solid $color-black;
+  background-color: mix($color-black, $color-white, 90%);
+  color: $color-white;
   width: max-content;
-
+  
   &:hover{
-    background-color: $color-light-blue;
     cursor: pointer;
+    background-color: mix($color-black, $color-white, 100%);
   }
 }
 
-.primary-button{
+.outline-button{
   @extend .button;
-  border: 1px solid $color-dark-green;
+  background-color: transparent;
+  color: $color-black;
 
   &:hover{
-    background-color: $color-light-green
+    color: $color-white;
+  }
+}
+
+.button-dark-red{
+  @extend .button;
+  border: 1px solid $color-dark-red;
+  background-color: mix($color-dark-red, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-dark-red, $color-white, 100%);
+  }
+}
+
+.button-dark-green{
+  @extend .button;
+  border: 1px solid $color-dark-green;
+  background-color: mix($color-dark-green, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-dark-green, $color-white, 100%);
+  }
+}
+
+.button-dark-blue{
+  @extend .button;
+  border: 1px solid $color-dark-blue;
+  background-color: mix($color-dark-blue, $color-white, 90%);
+
+  &:hover{
+    background-color: mix($color-dark-blue, $color-white, 100%);
+  }
+}
+
+.button-dark-orange{
+  @extend .button;
+  border: 1px solid $color-dark-orange;
+  background-color: mix($color-dark-orange, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-dark-orange, $color-white, 100%);
+  }
+}
+
+.button-dark-yellow{
+  @extend .button;
+  border: 1px solid $color-dark-yellow;
+  background-color: mix($color-dark-yellow, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-dark-yellow, $color-white, 100%);
+  }
+}
+
+.button-dark-pink{
+  @extend .button;
+  border: 1px solid $color-dark-pink;
+  background-color: mix($color-dark-pink, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-dark-pink, $color-white, 100%);
+  }
+}
+
+.button-dark-purple{
+  @extend .button;
+  border: 1px solid $color-dark-purple;
+  background-color: mix($color-dark-purple, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-dark-purple, $color-white, 100%);
+  }
+}
+
+.button-light-green{
+  @extend .button;
+  border: 1px solid $color-light-green;
+  background-color: mix($color-light-green, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-light-green, $color-white, 100%);
+  }
+}
+
+.button-light-red{
+  @extend .button;
+  border: 1px solid $color-light-red;
+  background-color: mix($color-light-red, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-light-red, $color-white, 100%);
+  }
+}
+
+.button-light-blue{
+  @extend .button;
+  border: 1px solid $color-light-blue;
+  background-color: mix($color-light-blue, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-light-blue, $color-white, 100%);
+  }
+}
+
+.button-light-orange{
+  @extend .button;
+  border: 1px solid $color-light-orange;
+  background-color: mix($color-light-orange, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-light-orange, $color-white, 100%);
+  }
+}
+
+.button-light-yellow{
+  @extend .button;
+  border: 1px solid $color-light-yellow;
+  background-color: mix($color-light-yellow, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-light-yellow, $color-white, 100%);
+  }
+}
+
+.button-light-pink{
+  @extend .button;
+  border: 1px solid $color-light-pink;
+  background-color: mix($color-light-pink, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-light-pink, $color-white, 100%);
+  }
+}
+
+.button-light-purple{
+  @extend .button;
+  border: 1px solid $color-light-purple;
+  background-color: mix($color-light-purple, $color-white, 90%);
+  
+  &:hover{
+    background-color: mix($color-light-purple, $color-white, 100%);
+  }
+}
+
+.button-outline-dark-green{
+  @extend .outline-button;
+  color: $color-dark-green;
+  border-color: $color-dark-green;
+  
+  &:hover{
+    background-color: $color-dark-green;
+  }
+}
+
+.button-outline-dark-red{
+  @extend .outline-button;
+  color: $color-dark-red;
+  border-color: $color-dark-red;
+  
+  &:hover{
+    background-color: $color-dark-red;
+  }
+}
+
+.button-outline-dark-blue{
+  @extend .outline-button;
+  color: $color-dark-blue;
+  border-color: $color-dark-blue;
+  
+  &:hover{
+    background-color: $color-dark-blue;
+  }
+}
+
+.button-outline-dark-orange{
+  @extend .outline-button;
+  color: $color-dark-orange;
+  border-color: $color-dark-orange;
+  
+  &:hover{
+    background-color: $color-dark-orange;
+  }
+}
+
+.button-outline-dark-yellow{
+  @extend .outline-button;
+  color: $color-dark-yellow;
+  border-color: $color-dark-yellow;
+  
+  &:hover{
+    background-color: $color-dark-yellow;
+  }
+}
+
+.button-outline-dark-pink{
+  @extend .outline-button;
+  color: $color-dark-pink;
+  border-color: $color-dark-pink;
+  
+  &:hover{
+    background-color: $color-dark-pink;
+  }
+}
+
+.button-outline-dark-purple{
+  @extend .outline-button;
+  color: $color-dark-purple;
+  border-color: $color-dark-purple;
+  
+  &:hover{
+    background-color: $color-dark-purple;
+  }
+}
+
+.button-outline-light-green{
+  @extend .outline-button;
+  color: $color-light-green;
+  border-color: $color-light-green;
+  
+  &:hover{
+    background-color: $color-light-green;
+  }
+}
+
+.button-outline-light-red{
+  @extend .outline-button;
+  color: $color-light-red;
+  border-color: $color-light-red;
+  
+  &:hover{
+    background-color: $color-light-red;
+  }
+}
+
+.button-outline-light-blue{
+  @extend .outline-button;
+  color: $color-light-blue;
+  border-color: $color-light-blue;
+  
+  &:hover{
+    background-color: $color-light-blue;
+  }
+}
+
+.button-outline-light-orange{
+  @extend .outline-button;
+  color: $color-light-orange;
+  border-color: $color-light-orange;
+  
+  &:hover{
+    background-color: $color-light-orange;
+  }
+}
+
+.button-outline-light-yellow{
+  @extend .outline-button;
+  color: $color-light-yellow;
+  border-color: $color-light-yellow;
+  
+  &:hover{
+    background-color: $color-light-yellow;
+  }
+}
+
+.button-outline-light-pink{
+  @extend .outline-button;
+  color: $color-light-pink;
+  border-color: $color-light-pink;
+  
+  &:hover{
+    background-color: $color-light-pink;
+  }
+}
+
+.button-outline-light-purple{
+  @extend .outline-button;
+  color: $color-light-purple;
+  border-color: $color-light-purple;
+  
+  &:hover{
+    background-color: $color-light-green;
   }
 }
