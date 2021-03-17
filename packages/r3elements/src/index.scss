@@ -69,3 +69,12 @@ h6 {
     cursor: pointer;
   }
 }
+
+.primary-button{
+  @extend .button;
+  border: 1px solid $color-dark-green;
+
+  &:hover{
+    background-color: $color-light-green
+  }
+}

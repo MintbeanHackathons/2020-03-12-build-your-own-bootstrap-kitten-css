@@ -19,6 +19,7 @@ const App = () => {
 
             <Example>{ <Card text="Primary" classes="primary" /> }</Example>
             <Example>{ <Button text="Primary" classes="button" /> }</Example>
+            <Example>{ <Button text="Dark Green" classes="primary-button" /> }</Example>
         </div>
     )
 }
