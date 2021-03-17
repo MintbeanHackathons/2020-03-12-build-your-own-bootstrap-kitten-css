@@ -1,6 +1,6 @@
 import React from 'react'
 import Example from './components/Example'
-import { Card } from './snippets/snippets/'
+import { Card, Button } from './snippets/snippets/'
 
 const App = () => {
 
@@ -18,7 +18,7 @@ const App = () => {
             <hr/>
 
             <Example>{ <Card text="Primary" classes="primary" /> }</Example>
-
+            <Example>{ <Button text="Primary" classes="button" /> }</Example>
         </div>
     )
 }
