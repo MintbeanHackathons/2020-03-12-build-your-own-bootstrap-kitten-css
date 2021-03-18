@@ -1,0 +1,172 @@
+@import "./variables";
+@import "./mixins";
+@import "./text";
+
+// nav bar
+body nav:first-of-type {
+
+    z-index: 1;
+
+    // put a pseudoelement after the first child to make elements distribute properly
+     *:first-child::after {
+      content: "";
+    }
+
+    min-height: 20px;
+    max-height: 30px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    align-items: center;
+    
+    // padding: 240px;
+
+    display: flex;
+    position: fixed;
+    top:0;
+    background-color: $section-bg;
+    width: 100vw;
+
+    @include tablet {
+      padding: 16px;
+    }
+
+    // if there is a wordmark or image, make it 80x80 pixels
+    & *:first-child:not(ul) {
+      width: 80px;
+    }
+
+    & *:last-child:not(ul) {
+      margin-right: 40px;
+      width: 80px;
+    }
+
+    // menu items
+    li {
+        margin: 0 8px;
+        white-space: nowrap; 
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 4px;
+
+        // submenu items
+        ul {
+            display: none;
+            padding-left: 0;
+            background-color: $section-bg;
+            padding: 8px 8px;
+            li {
+                padding: 16px 0;
+                margin:0;
+                background-color: $section-bg;
+                border-bottom: 1px solid $hero-bg;
+                border-top: 1px solid $hero-bg;
+            }
+        }
+
+        &:hover ul {
+            display: block;
+            position:absolute;
+
+            li {
+                white-space:normal;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: relative;
+            height: 5px;
+            width: 0;
+            background-color: $primary;
+            transition: width 0.3s;
+        }
+
+
+        &:hover::after {
+            width: 100%;
+            transition: width 0.3s;
+            // animation-name: grow;
+            // animation-duration: 0.3s;
+            // animation-fill-mode: forwards;
+        }
+    }
+
+    //mobile menu
+    a {
+        display: block;
+        width: 30px !important;
+        height: 3px; 
+        background-color: $primary;
+        border-radius: 9999px;
+
+        outline: none;
+
+        color: $font-color !important;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 30px !important;
+            height: 3px; 
+            background-color: $primary;
+            border-radius: 9999px;
+            position: relative;
+            left: 0 !important;
+            top: -5px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 30px !important;
+            height: 3px; 
+            background-color: $primary;
+            border-radius: 9999px;
+            position: relative;
+            top: 2px;
+        }
+
+
+        @include tablet {
+            display: none;
+        }
+
+        & > li {
+            display:none
+            
+        }
+
+        &:focus > ul {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 100vh;
+            left:0;
+
+            & li {
+                padding: 16px 8px;
+                margin:0;
+                background-color: $section-bg;
+                border-bottom: 1px solid $hero-bg;
+                border-top: 1px solid $hero-bg;
+                width: 100%;
+            }
+        }
+    }
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    // flex-wrap: nowrap;
+  }
+  
+  margin-right: 8px;
+}
+
+
+

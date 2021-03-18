@@ -1,0 +1,103 @@
+@import './typescale';
+@import './variables';
+
+h1 {
+    font-size: $base-type * $small-typescale * $small-typescale * $small-typescale * $small-typescale * $small-typescale * $small-typescale + 0px; 
+  }
+  
+  h2 {
+    font-size: $base-type * $small-typescale * $small-typescale * $small-typescale * $small-typescale * $small-typescale + 0px;
+  }
+  
+  h3 {
+    font-size: $base-type * $small-typescale * $small-typescale * $small-typescale * $small-typescale + 0px;
+  }
+  h4 {
+    font-size: $base-type * $small-typescale * $small-typescale * $small-typescale + 0px;
+  }
+  
+  h5 {
+    font-size: $base-type * $small-typescale * $small-typescale + 0px
+  }
+  
+  h6 {
+    font-size: $base-type * $small-typescale + 0px
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-family: $heading-font;
+    color: $font-color;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: $base-type + 0px;
+    color: $body-text;
+    font-family: Lora;
+    line-height: 1.7em;
+    font-weight: lighter;
+  }
+
+  section:not(:first-of-type) > p {
+      @include tablet{
+        max-width: 40%;
+        margin-right: 10%;
+        // display: inline-block
+      }
+  }
+
+  h1 + span {
+    display: block;
+    width: 80px;
+    height: 8px;
+    background-color: $primary;
+    margin: 8px 0 36px 0;
+
+
+  }
+
+  a {
+    color: $primary;
+    font-weight: bold;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 0px;
+      height: 0.85em;
+      background-color: $primary;
+      position: relative;
+      left: -2px;
+      transition: width 0.3s;
+    }
+
+    &:hover::before{
+      transition: width 0.3s;
+      width: 10px;
+    }
+
+    button > & {
+      color: white;
+      font-weight: normal;
+
+      &::before {
+        content: "";
+        width: 0;
+      }
+  
+      &:hover::before{
+        content: "";
+        width: 0;
+      }
+
+    }
+  }
+
+  code {
+    background-color: $hero-bg;
+  }
+
+  pre {
+    background-color: $hero-bg;
+  }

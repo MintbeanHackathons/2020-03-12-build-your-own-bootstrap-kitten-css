@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><link rel="stylesheet" href="./byob-css-example.6ac924bb.css"> </head><body> <nav> <span><strong>Logo</strong></span> <ul> <li>Nav item</li> <li>Another item <ul> <li>A nested item</li> <li>Wouldn't you know it, another item. This one has a very long name.</li> </ul> </li> <li>Yet another</li> <li>A final item</li> </ul> <a> <ul> <li>Nav item</li> <li>Another item <ul> <li>A nested item</li> <li>Wouldn't you know it, another nested item. This one has a very long name.</li> </ul> </li> <li>Yet another</li> <li>A final item</li> </ul> </a> </nav> <section> <h1>This is a hero section...</h1> <h2>Made with Mnma</h2> <p>It's dead simple. Mnma will automatically make the first <code>< section ></code> tag on your page into a hero section. want a Call to Action button? Just put a button anywhere in this <code>< section ></code> and Mnma will make it a big, prominent CTA button like the one you see below. </p> <p> It's dead simple to place images here, to. Just put an <code>< img ></code> anywhere in this <code>< section ></code> tag, and Mnma will position and size it properly. </p> <button>Look at this pretty CTA!</button> <img src="./kitchensink-hero.87d97904.svg" alt=""> </section> <section> <h1>Typography</h1> <p> Mnma provides a nice-looking typescale and font pairing out of the box. </p> <p> By default, the first h1 inside a <code>< section ></code> tag will get a small underline element underneath it. Just 'cause it looks neat. </p> <p> <code>< p ></code> elements have a limited width to increase readability. </p> </section> <section> <h1>Layout</h1> </section> <section> <h1>Layout</h1> </section> <section> <h1>Elements</h1> <h2>1. Cards</h2> <p> Any <code>< aside > </code> inside of a <code>< section ></code> will be styled as a card. A <code>< span ></code> inside of a card will be turned into a purple underline. </p> <aside> <h1> Here's a card! </h1> <span></span> <p> This is a card. How does it look? pretty snazzy I bet. You jealous? Don't be. You can make one too, it just takes a little bit of HTML. </p> </aside> <aside> <h1> Another card! </h1> <span></span> <h6>This one's got a cool picture of me in it 😎</h6> <img src="./pic1.aa9f2134.jpg" alt=""> <p> you can put an <code>< img ></code> anywhere in your aside and it will be sized and formatted properly </p> </aside> <aside> <h1> One more card! </h1> <span></span> <h6>With a subheading for good measure</h6> <p> Cards line up side-by-side by default. If you don't want that, you can wrap the <code>< aside ></code> in a <code>< div ></code>. That's what I've done with the card below! </p> </aside>  <div> <aside> <h1>I'm a card!</h1> <span></span> <h6>but i'm inside of a div 😎 </h6> so now i'm a block-level card. </aside> </div> <h4>Code snippets for cards</h4> <h6>regular card:</h6> <pre>
+        <code>
+            &#x3C;aside&#x3E; 
+                &#x3C;h1&#x3E; 
+                    One more card! 
+                &#x3C;/h1&#x3E; 
+                &#x3C;span&#x3E;&#x3C;/span&#x3E; 
+                &#x3C;h6&#x3E;With a subheading for good measure&#x3C;/h6&#x3E; 
+                &#x3C;p&#x3E; 
+                    Cards line up side-by-side by default. 
+                &#x3C;/p&#x3E;
+            &#x3C;/aside&#x3E;
+        </code>
+        </pre> <h6>Block level card:</h6> <pre>
+            <code>
+                &#x3C;div&#x3E;
+                &#x3C;aside&#x3E;
+                    &#x3C;h1&#x3E;I&#x27;m a card!&#x3C;/h1&#x3E;
+                    &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;h6&#x3E;but i&#x27;m inside of a div &#x1F60E; &#x3C;/h6&#x3E;
+                    so now i&#x27;m a block-level card. 
+                &#x3C;/aside&#x3E;
+            &#x3C;/div&#x3E;
+            </code>
+        </pre> <h6>Card with an image:</h6> <pre>
+            <code>
+                &#x3C;aside&#x3E;
+
+                &#x3C;h1&#x3E;
+                    Another card! 
+                &#x3C;/h1&#x3E;
+                &#x3C;span&#x3E;&#x3C;/span&#x3E;
+                &#x3C;h6&#x3E;This one&#x27;s got a cool picture of me in it &#x1F60E;&#x3C;/h6&#x3E;
+                    &#x3C;img src=&#x22;./assets/pic1.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;p&#x3E;
+                   you can put an &#x3C;code&#x3E;&#x3C; img &#x3E;&#x3C;/code&#x3E; anywhere in your div and it will be sized and formatted properly
+                &#x3C;/p&#x3E;
+            &#x3C;/aside&#x3E;
+            </code>
+        </pre> <h2>2. Navbar</h2> <p> The first <code>< nav ></code> element on your page will become a navbar. The navbar at the top of this page is an example. </p> <p> The navbar can to hold a logo, a desktop nav menu, and a mobile nav. The logo or wordmark can be any element, and your menu should be a <code>< ul ></code> </p> <h6>Nested nav menus</h6> <p>To create a nested nav menu, just place a <code> < ul > </code> inside of one of an <code>< li ></code> in your nav. Refer to the code snippets below for a working example. </p> <h6>Mobile menu</h6> <p>To create a mobile menu, put an <code>< a ></code> tag inside of your nav with a <code>< ul ></code> inside of it You can build your mobile menu inside of that <code>< ul ></code>. See the code snippet below for a working example.</p> <h6>Navbar code snippets</h6> <p>Below is the markup for the navbar at the top of this page</p> <pre>
+            <code>
+                &#x3C;nav&#x3E;
+        &#x3C;span&#x3E;&#x3C;strong&#x3E;Logo&#x3C;/strong&#x3E;&#x3C;/span&#x3E;
+        &#x3C;ul&#x3E;
+            &#x3C;li&#x3E;Nav item&#x3C;/li&#x3E;
+            &#x3C;li&#x3E;Another item
+                &#x3C;ul&#x3E;
+                    &#x3C;li&#x3E;A nested item&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;Wouldn&#x27;t you know it, another item. This one has a very long name.&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li&#x3E;Yet another&#x3C;/li&#x3E;
+            &#x3C;li&#x3E;A final item&#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+        &#x3C;a&#x3E;
+            &#x3C;ul&#x3E;
+                &#x3C;li&#x3E;Nav item&#x3C;/li&#x3E;
+                &#x3C;li&#x3E;Another item
+                    &#x3C;ul&#x3E;
+                        &#x3C;li&#x3E;A nested item&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;Wouldn&#x27;t you know it, another nested item. This one has a very long name.&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/li&#x3E;
+                &#x3C;li&#x3E;Yet another&#x3C;/li&#x3E;
+                &#x3C;li&#x3E;A final item&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+        &#x3C;/a&#x3E;
+    &#x3C;/nav&#x3E;
+            </code>
+        </pre> <h1>3. Figures</h1> <p>You can create a round image with a caption like the one you see below using a <code>< figure ></code> element with an <code>< img ></code> and <code>< figcaption ></code> inside it</p> <figure> <img src="./pic1.aa9f2134.jpg" alt=""> <figcaption> Here I am! This is a picture of me. My mom took it. Don't I look nice? I knew you'd say yes ^_^. I'm smiling because I know you're going to enjoy using Mnma. Now go build something neat! </figcaption> </figure> <h6>Figure code snippet:</h6> <pre>
+          <code>
+            &#x3C;figure&#x3E;
+            &#x3C;img src=&#x22;./assets/pic1.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+            &#x3C;figcaption&#x3E;
+              Here I am! This is a picture of me. My mom took it. Don&#x27;t I look nice? I knew you&#x27;d say yes ^_^. I&#x27;m smiling
+              because I know you&#x27;re going to enjoy using Mnma. Now go build something neat! 
+            &#x3C;/figcaption&#x3E;
+          &#x3C;/figure&#x3E;
+          </code>
+      </pre> </section> <script src="./byob-css-example.820768de.js"></script> </body></html>

@@ -1,0 +1,67 @@
+@import "./variables";
+@import "./mixins";
+@import "./calculated";
+@import "./text";
+
+section:not(:first-of-type) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+  
+    & > h1:first-child::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 8px;
+      background-color: $primary;
+      margin: 8px 0;
+      position: relative;
+      
+    }
+  
+    @include tablet {
+      display: block;
+    }
+  }
+  
+  section:not(:first-of-type) aside {
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.1);
+    display: inline-block;
+    padding: 2%;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid $hero-bg;
+    margin: 8px;
+    vertical-align: top;
+  
+    @include tablet {
+      width: 20%;
+    }
+  
+    &:first-of-type {
+      margin-left: 0;
+      margin-right: 8px
+    }
+    &:last-of-type {
+      margin-left: 8px;
+      margin-right: 0
+    }
+  
+    & span {
+      display: block;
+      width: 80px;
+      height: 8px;
+      background-color: $primary;
+      margin: 24px 0;
+    }
+  
+    & img {
+      max-width:100%;
+      max-height:60%;
+      max-width: auto;
+    }
+  
+    & h1,h2,h3,h4,h5,h6 {
+      margin: 0;
+    }
+  }

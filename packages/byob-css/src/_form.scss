@@ -1,0 +1,33 @@
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+
+form {
+
+
+    margin: 0 auto;
+    width: 100%;
+
+    @include tablet {
+        width: 30%;
+    }
+
+    & * {
+        display: block;
+    }
+
+    input, textarea {
+        border: 2px solid $hero-bg;
+        padding: 0.6rem;
+        border-radius: 6px;
+        width: 100%;
+        transition: border 0.4s;
+        outline:none;
+        font-family: Lora;
+
+        &:focus{
+            border: 2px solid #525252;
+            transition: border 0.4s;
+        }
+    }
+}

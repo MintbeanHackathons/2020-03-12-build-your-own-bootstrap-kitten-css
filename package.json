@@ -10,6 +10,6 @@
   ],
   "scripts": {
     "start": "cd packages/byob-css-example && yarn start",
-    "build": "rm -rf ./docs && cd packages/byob-css-example && yarn build"
+    "build":  "cd packages/byob-css-example && yarn build"
   }
 }
