@@ -16,11 +16,14 @@ const App = () => {
                 <h6>Header 6</h6>
             </section>
             <section>
-                <nav>Nav</nav>
                 <aside>Aside</aside>
                 <header>Header</header>
                 <main>
                     <h6>Main</h6>
+                    <nav>
+                        <a href="/html/">HTML</a>
+                        <a href="/css/">CSS</a>
+                    </nav>
                     <br></br>
                 <li>List item</li>
                 <ol> Ordered list

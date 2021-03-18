@@ -61,6 +61,12 @@ h6 {
 
 //****************************** Generic Tags ********************************
 
+nav {
+  display: flex;
+  border: black dotted 1px;
+  justify-content: space-between;
+}
+
 aside {
   opacity: 0.3;
 }
