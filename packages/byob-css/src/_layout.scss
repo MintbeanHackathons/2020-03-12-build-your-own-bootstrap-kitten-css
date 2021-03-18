@@ -1,0 +1,67 @@
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+
+section:not(:first-of-type) > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    
+
+    @include tablet{
+        flex-direction: row;
+    }
+
+    & > div {
+        @include tablet {
+            flex-grow: 1;
+            max-width: 40%;
+            &:first-of-type {
+                margin-right: 10%
+            }
+        }
+    }
+}
+
+section div img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        vertical-align: top;
+}
+
+figure > img {
+    display: block;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    clip-path: circle();
+    margin: auto auto;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-family: Lora;
+    max-width: 50%;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+// padding on body sections
+body > section, footer {
+    padding: 0 16px;
+    @include tablet {
+      padding: 0 $tablet-padding;
+    }
+  }
+  
+  
+  // alternating section colors
+  section:nth-child(2n){
+    background-color: $section-bg;
+  }
+  
+  // footer 
+  body > footer:last-of-type {
+  
+  }

@@ -17,6 +17,19 @@
 }
 
 @font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: Montserrat;
   src: url(./fonts/Montserrat-Regular.ttf);
   font-weight: normal;
@@ -35,6 +48,19 @@
 }
 
 @font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: Montserrat;
   src: url(./fonts/Montserrat-Regular.ttf);
   font-weight: normal;
@@ -52,10 +78,48 @@
   font-weight: lighter;
 }
 
-html, body {
-  padding: 0;
-  margin: 0;
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
 }
 
 h1 {
@@ -89,24 +153,286 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 16;
-  font-family: Montserrat;
+  font-size: 16px;
+  color: #525252;
+  font-family: Lora;
+  line-height: 1.7em;
   font-weight: lighter;
 }
 
+@media screen and (min-width: 768px) {
+  section:not(:first-of-type) > p {
+    max-width: 40%;
+    margin-right: 10%;
+  }
+}
+
+h1 + span {
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #6C63FF;
+  margin: 8px 0 36px 0;
+}
+
+a {
+  color: #6C63FF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0.85em;
+  background-color: #6C63FF;
+  position: relative;
+  left: -2px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+a:hover::before {
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  width: 10px;
+}
+
+button > a {
+  color: white;
+  font-weight: normal;
+}
+
+button > a::before {
+  content: "";
+  width: 0;
+}
+
+button > a:hover::before {
+  content: "";
+  width: 0;
+}
+
+code {
+  background-color: #efefef;
+}
+
+pre {
+  background-color: #efefef;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 47.77574px;
+}
+
+h2 {
+  font-size: 39.81312px;
+}
+
+h3 {
+  font-size: 33.1776px;
+}
+
+h4 {
+  font-size: 27.648px;
+}
+
+h5 {
+  font-size: 23.04px;
+}
+
+h6 {
+  font-size: 19.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
+  color: #222222;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  color: #525252;
+  font-family: Lora;
+  line-height: 1.7em;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+  section:not(:first-of-type) > p {
+    max-width: 40%;
+    margin-right: 10%;
+  }
+}
+
+h1 + span {
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #6C63FF;
+  margin: 8px 0 36px 0;
+}
+
+a {
+  color: #6C63FF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0.85em;
+  background-color: #6C63FF;
+  position: relative;
+  left: -2px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+a:hover::before {
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  width: 10px;
+}
+
+button > a {
+  color: white;
+  font-weight: normal;
+}
+
+button > a::before {
+  content: "";
+  width: 0;
+}
+
+button > a:hover::before {
+  content: "";
+  width: 0;
+}
+
+code {
+  background-color: #efefef;
+}
+
+pre {
+  background-color: #efefef;
+}
+
 body nav:first-of-type {
-  max-height: 5vh;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  min-height: 20px;
+  max-height: 30px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 0;
-  background-color: #efefef;
+  background-color: #fbfbfb;
   width: 100vw;
 }
 
@@ -129,9 +455,119 @@ body nav:first-of-type *:last-child:not(ul) {
   width: 80px;
 }
 
+body nav:first-of-type li {
+  margin: 0 8px;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+body nav:first-of-type li ul {
+  display: none;
+  padding-left: 0;
+  background-color: #fbfbfb;
+  padding: 8px 8px;
+}
+
+body nav:first-of-type li ul li {
+  padding: 16px 0;
+  margin: 0;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+}
+
+body nav:first-of-type li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+body nav:first-of-type li:hover ul li {
+  white-space: normal;
+}
+
+body nav:first-of-type li::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 0;
+  background-color: #6C63FF;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+body nav:first-of-type li:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+body nav:first-of-type a {
+  display: block;
+  width: 30px !important;
+  height: 3px;
+  background-color: #6C63FF;
+  border-radius: 9999px;
+  outline: none;
+  color: #222222 !important;
+}
+
+body nav:first-of-type a::before {
+  content: "";
+  display: block;
+  width: 30px !important;
+  height: 3px;
+  background-color: #6C63FF;
+  border-radius: 9999px;
+  position: relative;
+  left: 0 !important;
+  top: -5px;
+}
+
+body nav:first-of-type a::after {
+  content: "";
+  display: block;
+  width: 30px !important;
+  height: 3px;
+  background-color: #6C63FF;
+  border-radius: 9999px;
+  position: relative;
+  top: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  body nav:first-of-type a {
+    display: none;
+  }
+}
+
+body nav:first-of-type a > li {
+  display: none;
+}
+
+body nav:first-of-type a:focus > ul {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100vh;
+  left: 0;
+}
+
+body nav:first-of-type a:focus > ul li {
+  padding: 16px 8px;
+  margin: 0;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+  width: 100%;
+}
+
 nav ul {
   list-style: none;
   display: none;
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -139,23 +575,69 @@ nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
 }
 
-li {
-  margin: 0 8px;
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
 }
 
-body > section {
-  padding: 0;
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-  body > section {
-    padding: 0 5%;
-  }
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
 }
 
 body > section:first-of-type {
@@ -189,8 +671,8 @@ body > section:first-of-type span:nth-child(3),
 body > section:first-of-type span:nth-child(4) {
   display: block;
   width: 80px;
-  height: 10px;
-  background-color: #4a5cff;
+  height: 8px;
+  background-color: #6C63FF;
   margin: 24px 0;
 }
 
@@ -224,7 +706,7 @@ body > section:first-of-type > p {
 }
 
 body > section:first-of-type > button {
-  background-color: #4a5cff;
+  background-color: #6C63FF;
   border: none;
   color: white;
   padding: 1em;
@@ -243,6 +725,230 @@ section {
   padding: 0 8px;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 47.77574px;
+}
+
+h2 {
+  font-size: 39.81312px;
+}
+
+h3 {
+  font-size: 33.1776px;
+}
+
+h4 {
+  font-size: 27.648px;
+}
+
+h5 {
+  font-size: 23.04px;
+}
+
+h6 {
+  font-size: 19.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
+  color: #222222;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  color: #525252;
+  font-family: Lora;
+  line-height: 1.7em;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+  section:not(:first-of-type) > p {
+    max-width: 40%;
+    margin-right: 10%;
+  }
+}
+
+h1 + span {
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #6C63FF;
+  margin: 8px 0 36px 0;
+}
+
+a {
+  color: #6C63FF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a::before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0.85em;
+  background-color: #6C63FF;
+  position: relative;
+  left: -2px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+a:hover::before {
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  width: 10px;
+}
+
+button > a {
+  color: white;
+  font-weight: normal;
+}
+
+button > a::before {
+  content: "";
+  width: 0;
+}
+
+button > a:hover::before {
+  content: "";
+  width: 0;
+}
+
+code {
+  background-color: #efefef;
+}
+
+pre {
+  background-color: #efefef;
+}
+
 section:not(:first-of-type) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,15 +957,17 @@ section:not(:first-of-type) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 16px;
 }
 
 section:not(:first-of-type) > h1:first-child::after {
   content: "";
   display: block;
   width: 80px;
-  height: 10px;
-  background-color: #4a5cff;
-  margin: 24px 0;
+  height: 8px;
+  background-color: #6C63FF;
+  margin: 8px 0;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -299,8 +1007,8 @@ section:not(:first-of-type) aside:last-of-type {
 section:not(:first-of-type) aside span {
   display: block;
   width: 80px;
-  height: 10px;
-  background-color: #4a5cff;
+  height: 8px;
+  background-color: #6C63FF;
   margin: 24px 0;
 }
 
@@ -314,7 +1022,252 @@ section:not(:first-of-type) aside h1, section:not(:first-of-type) aside h2, sect
   margin: 0;
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+section:not(:first-of-type) > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  section:not(:first-of-type) > div:first-of-type {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section:not(:first-of-type) > div:first-of-type > div {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 40%;
+  }
+  section:not(:first-of-type) > div:first-of-type > div:first-of-type {
+    margin-right: 10%;
+  }
+}
+
+section div img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  vertical-align: top;
+}
+
+figure > img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  margin: auto auto;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-family: Lora;
+  max-width: 50%;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+body > section, footer {
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  body > section, footer {
+    padding: 0 5%;
+  }
+}
+
 section:nth-child(2n) {
   background-color: #fbfbfb;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(./fonts/Lora-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 30%;
+  }
+}
+
+form * {
+  display: block;
+}
+
+form input, form textarea {
+  border: 2px solid #efefef;
+  padding: 0.6rem;
+  border-radius: 6px;
+  width: 100%;
+  -webkit-transition: border 0.4s;
+  transition: border 0.4s;
+  outline: none;
+  font-family: Lora;
+}
+
+form input:focus, form textarea:focus {
+  border: 2px solid #525252;
+  -webkit-transition: border 0.4s;
+  transition: border 0.4s;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+section {
+  padding: 16px;
+}
+
+button {
+  background-color: #6C63FF;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  margin: 8px 0;
+  color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 3px 3px 5px -4px rgba(0, 0, 0, 0.26);
+          box-shadow: 3px 3px 5px -4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
