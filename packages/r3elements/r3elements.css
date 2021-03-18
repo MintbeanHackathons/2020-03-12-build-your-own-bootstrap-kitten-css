@@ -33,3 +33,15 @@ h6 {
   .card:hover {
     background-color: #eeeeee;
     cursor: pointer; }
+
+.columns {
+  display: flex;
+  flex-direction: column; }
+
+.rows {
+  display: flex;
+  flex-direction: row; }
+
+.button {
+  padding: 1rem 2rem;
+  border: 1px solid #28527a; }

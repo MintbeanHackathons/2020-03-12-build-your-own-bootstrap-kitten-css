@@ -1,9 +1,12 @@
 import React from 'react'
+import ButtonPage from './pages/ButtonPage'
 
-function App() {
+const App = () => {
+
     return (
         <div>
-            <section>
+            <section className="body">
+                <header>Specific Tags</header>
                 <h1>Hussain</h1>
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
@@ -13,9 +16,24 @@ function App() {
                 <h6>Header 6</h6>
             </section>
             <section>
-                <h1>Cards</h1>
+                <nav>Nav</nav>
+                <aside>Aside</aside>
+                <header>Header</header>
+                <footer>Footer</footer>
+                <main>Main</main>
+                <section>Section</section>
+                <ol>Ol</ol>
+                <li>Li</li>
+                <ul>Ul</ul>
+                <p>p</p>
+                <a>a</a>
+                <code>code</code>
+            </section>
+            <section>
+                <header>Cards</header>
                 <div className="card">Hello World</div>
             </section>
+            "<section className="rows"></section> "
             <section className="rows">
                 <div className="card">Card 1</div>
                 <div className="card">Card 2</div>
@@ -26,6 +44,8 @@ function App() {
                 <div className="card">Card 5</div>
                 <div className="card">Card 6</div>
             </section>
+            <hr/>
+            <ButtonPage />
         </div>
     )
 }
