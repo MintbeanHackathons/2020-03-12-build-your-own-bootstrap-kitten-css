@@ -19,26 +19,42 @@ const App = () => {
                 <nav>Nav</nav>
                 <aside>Aside</aside>
                 <header>Header</header>
-                <footer>Footer</footer>
-                <main>Main</main>
+                <main>
+                    <h6>Main</h6>
+                    <br></br>
+                <li>List item</li>
+                <ol> Ordered list
+                    <li></li>
+                    <li></li>
+                </ol>
+                <ul>
+                    Unordered list 
+                    <li></li>
+                    <li></li>
+                </ul>
+
                 <section>Section</section>
-                <ol>Ol</ol>
-                <li>Li</li>
-                <ul>Ul</ul>
                 <p>p</p>
                 <a>a</a>
                 <code>code</code>
+
+                </main>
+                <footer>Footer</footer>
             </section>
             <section>
                 <header>Cards</header>
                 <div className="card">Hello World</div>
             </section>
-            "<section className="rows"></section> "
+            <br></br>
+
+            {/* <p> "<section" className="rows" ></section>" </p> */}
+                <header>Flexbox rows</header>
             <section className="rows">
                 <div className="card">Card 1</div>
                 <div className="card">Card 2</div>
                 <div className="card">Card 3</div>
             </section>
+                <header>Flexbox columns</header>
             <section className="columns">
                 <div className="card">Card 4</div>
                 <div className="card">Card 5</div>

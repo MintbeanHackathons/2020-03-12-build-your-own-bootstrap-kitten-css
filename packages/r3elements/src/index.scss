@@ -67,9 +67,48 @@ aside {
 
 header {
   color: black;
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1rem;
+  text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: black solid 1px;
+}
+footer {
+  color: black;
+  font-size: 1rem;
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-top: black solid 1px;
+}
+
+main {
+  height: 80vh; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: whitesmoke;
+}
+
+ol > li {
+  font-family: monospace;
+  font-size: smaller;
+  list-style-type: upper-roman;
+  text-align: left;
+}  
+
+li {
+  font-family: monospace;
+  font-size: smaller;
+  list-style-type: square;
+  text-align: left;
+}
+
+ul {
+  font-family: monospace;
+  font-size: smaller;
+  list-style-type: square;
+  text-align: left;
+}
+
+p {
+  font-family: monospace;
 }
 
 //****************************** Components ********************************
