@@ -63,10 +63,16 @@ h6 {
 
 nav {
   display: flex;
-  border: black dotted 1px;
+  // border: black dotted 1px;
   justify-content: space-between;
+  background-color: black;
 }
 
+a {
+  border: black solid 0.5px;
+  background-color: white;
+  font-family: monospace;
+}
 aside {
   opacity: 0.3;
 }

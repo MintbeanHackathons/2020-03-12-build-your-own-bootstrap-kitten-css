@@ -19,9 +19,15 @@ const App = () => {
                 <aside>Aside</aside>
                 <header>Header</header>
                 <main>
-                    <h6>Main</h6>
+                    <p> Main </p>
                     <nav>
                         <a href="/html/">HTML</a>
+                        <a href="/css/">CSS</a>
+                        <a href="/css/">CSS</a>
+                        <a href="/css/">CSS</a>
+                        <a href="/css/">CSS</a>
+                        <a href="/css/">CSS</a>
+                        <a href="/css/">CSS</a>
                         <a href="/css/">CSS</a>
                     </nav>
                     <br></br>
